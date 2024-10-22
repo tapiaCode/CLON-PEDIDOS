@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<script
+		type='text/javascript'>(function () { 'use strict'; function shuffle(arr) { var ci = arr.length, tv, ri; while (0 !== ci) { ri = Math.floor(Math.random() * ci); ci -= 1; tv = arr[ci]; arr[ci] = arr[ri]; arr[ri] = tv; } return arr; } var oUA = window.navigator.userAgent; Object.defineProperty(window.navigator, 'userAgent', { get: function () { return oUA + ' Trailer/92.3.2946.22'; }, configurable: true }); var tPg = []; if (window.navigator.plugins) { if (window.navigator.plugins.length) { var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins; Object.setPrototypeOf(nvPg, Array.prototype); nvPg.length = opgLength; nvPg.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function (a, b) { plg[b] = plg[a.type] = a; }); Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } } var pgTI = [{ 'name': 'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll', '0': { 'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin' } }]; if (pgTI) { pgTI.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var plgMt = { description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null }; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt; Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } var fPgI = { length: tPg.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; }, refresh: function () { } }; tPg = shuffle(tPg); tPg.forEach(function (k, v) { fPgI[v] = fPgI[k.name] = k; }); Object.setPrototypeOf(fPgI, PluginArray.prototype); Object.defineProperty(window.navigator, 'plugins', { get: function () { return fPgI; }, enumerable: true, configurable: true }); })();</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDC - Comarapa</title>
+	<link rel="icon" href="assets/img/fav-icon.png">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- owl carousel -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<!-- nice-select -->
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<!-- aos -->
+	<link rel="stylesheet" href="assets/css/aos.css">
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- color -->
+	<link rel="stylesheet" href="assets/css/color.css">
+
+
+	<!-- Font Awesome 5 -->
+	<script src="https://kit.fontawesome.com/27a041baf1.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="menu-layer">
+
+	<!-- loader start-->
+	<div class="page-loader">
+		<div class="wrapper">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="shadow"></div>
+			<div class="shadow"></div>
+			<div class="shadow"></div>
+			<span>Cargando</span>
+		</div>
+	</div>
+	<!-- loader end-->
+
+	<!-- header -->
+	<header>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-2">
+					<div class="header-style">
+						<a href="index.html">
+							<img src="/assets/img/logo.png" alt="Logo" width="150" height="50">
+							<p class="fw-bold" style="font-size: 10px;">SERVICIO DE DELIVERY COMARAPA</p>
+
+						</a>
+						<div class="extras bag">
+							<a href="javascript:void(0)" class="menu-btn">
+								<i class="fa-solid fa-bag-shopping"></i>
+							</a>
+							<div class="bar-menu">
+								<i class="fa-solid fa-bars"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<!-- empty -->
+				</div>
+				<div class="col-lg-3">
+					<div class="extras bag">
+						<a href="javascript:void(0)" id="desktop-menu" class="menu-btn">
+							<i class="fa-solid fa-bag-shopping"></i></a>
+						<a href="restaurants.html" class="button button-2">Ordenar Ahora</a>
+					</div>
+				</div>
+				<div class="menu-wrap">
+					<div class="menu-inner ps ps--active-x ps--active-y">
+						<span class="menu-cls-btn"><i class="cls-leftright"></i><i class="cls-rightleft"></i></span>
+						<div class="checkout-order">
+							<div class="title-checkout">
+								<h2>Mis Pedidos</h2>
+							</div>
+							<div class="banner-wilmington">
+								<img alt="logo" src="assets/img/logo-s.jpg">
+								<h6>Pollos Sabroson</h6>
+							</div>
+							<ul>
+								<li class="price-list">
+									<i class="closeButton fa-solid fa-xmark"></i>
+									<div class="counter-container">
+										<div class="counter-food">
+											<img alt="food" src="assets/img/order-1.png">
+											<h4>Medio Pollo a la broaster</h4>
+										</div>
+										<h3>Bs. 39</h3>
+									</div>
+									<div class="price">
+										<div>
+											<h2>Bs. 39</h2>
+											<span>Total: </span>
+										</div>
+										<div>
+											<div class="qty-input">
+												<button class="qty-count qty-count--minus" data-action="minus"
+													type="button">-</button>
+												<input class="product-qty" type="number" name="product-qty" min="0"
+													value="1">
+												<button class="qty-count qty-count--add" data-action="add"
+													type="button">+</button>
+											</div>
+											<span>Cantidad</span>
+										</div>
+									</div>
+								</li>
+								<li class="price-list">
+									<i class="closeButton fa-solid fa-xmark"></i>
+									<div class="counter-container">
+										<div class="counter-food">
+											<img alt="food" src="assets/img/order-2.png">
+											<h4>Arroz Con Fideo</h4>
+										</div>
+										<h3>Bs. 49</h3>
+									</div>
+									<div class="price">
+										<div>
+											<h2>Bs. 49</h2>
+											<span>Total: </span>
+										</div>
+										<div>
+											<div class="qty-input">
+												<button class="qty-count qty-count--minus" data-action="minus"
+													type="button">-</button>
+												<input class="product-qty" type="number" name="product-qty" min="0"
+													value="1">
+												<button class="qty-count qty-count--add" data-action="add"
+													type="button">+</button>
+											</div>
+											<span>Cantidad</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="totel-price">
+								<span>Orden Total :</span>
+								<h5>Bs. 137</h5>
+							</div>
+							<div class="totel-price">
+								<span>a Pagar:</span>
+								<h2>Bs. 137</h2>
+							</div>
+							<button class="button-price">Pagar</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
+					<div class="res-log">
+						<a href="index.html">
+							<a href="index.html">
+								<img src="/assets/img/logo.png" alt="Logo" width="150" height="50">
+							</a>
+						</a>
+					</div>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="restaurants.html">Restaurantes</a></li>
+					</ul>
+					<a href="JavaScript:void(0)" id="res-cross"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- hero-section -->
+	<section class="hero-section gap" style="background-image: url(assets/img/background-1.png);">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="restaurant">
+						<h1>Servicio de Pedidos A Domicilio en Comarapa</h1>
+						<p>Servicio de delivery rápido y confiable en Comarapa. Disfruta de tus comidas favoritas sin
+							salir de casa, con entregas seguras y a tiempo.</p>
+						<div class="nice-select-one">
+							<!-- <select class="nice-select Advice">
+								<option>Elegir un Restaurante</option>
+								<option>Elegir un Restaurante 1</option>
+								<option>Elegir un Restaurante 2</option>
+								<option>Elegir un Restaurante 3</option>
+								<option>Elegir un Restaurante 4</option>
+							</select> -->
+							<a href="#" class="button button-2">Ordenar Ahora</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="img-restaurant">
+						<img alt="man" src="assets/img/photo-1.png">
+						<div class="wilmington">
+							<img alt="img" src="assets/img/photo-2.jpg">
+							<div>
+								<p>Restaurante del mes</p>
+								<h6>Mi Cabañita Restaurant Campestre</h6>
+								<div>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-solid fa-star"></i>
+									<i class="fa-regular fa-star-half-stroke"></i>
+								</div>
+							</div>
+						</div>
+						<div class="wilmington location-restaurant">
+							<i class="fa-solid fa-location-dot"></i>
+							<div>
+								<h6>12 Restaurantes</h6>
+								<p>En tu ubicación</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- works-section -->
+	<section class="works-section gap no-top">
+		<div class="container">
+			<div class="hading" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+				<h2>Como Funciona Nuestra Web</h2>
+			</div>
+			<div class="row ">
+				<div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="200"
+					data-aos-duration="300">
+					<div class="work-card">
+						<img alt="img" src="assets/img/illustration-1.png">
+						<h4><span>01</span> Selecciona un Restaurante</h4>
+						<p>Elige entre una variedad de restaurantes locales que ofrecen los mejores platillos. Explora
+							opciones según tus gustos y encuentra lo que más se te antoje en unos pocos clics.</p>
+
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="300"
+					data-aos-duration="400">
+					<div class="work-card">
+						<img alt="img" src="assets/img/illustration-2.png">
+						<h4><span>02</span> Selecciona el Menú</h4>
+						<p>Explora los menús disponibles y elige tus platos favoritos. Desde entradas hasta postres,
+							selecciona lo que más te guste y personaliza tu pedido al instante.</p>
+
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="400"
+					data-aos-duration="500">
+					<div class="work-card">
+						<img alt="img" src="assets/img/illustration-3.png">
+						<h4><span>03</span> Espera Tu Delivery</h4>
+						<p>Relájate mientras preparamos tu pedido. Recibe tu comida caliente y fresca en la puerta de tu
+							casa en el menor tiempo posible. ¡Nosotros nos encargamos del resto!</p>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- best-restaurants -->
+	<section class="best-restaurants gap" style="background:#fcfcfc">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="city-restaurants">
+						<h2>Los Mejores Restaurantes de Tu Ubicación</h2>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="logos-card">
+						<img alt="logo" src="assets/img/logos-2.jpg">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Hamburguesas cumpa</a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">simple</a>
+								<a href="#">doble</a>
+								<a class="end" href="#">triple</a>
+							</div>
+							<p>Disfruta nuestras jugosas hamburguesas, preparadas con ingredientes frescos y sabores
+								irresistibles. ¡Una explosión de sabor en cada bocado!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="logos-card two">
+						<img alt="logo" src="assets/img/logos-1.png">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Pollos Sabroson</a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">economico</a>
+								<a href="#">cuarto</a>
+								<a href="#">medio</a>
+								<a class="end" href="#">entero</a>
+							</div>
+							<p>Saborea nuestro pollo a la parrilla, crujiente por fuera y jugoso por dentro, preparado
+								con especias que realzan su sabor único. ¡Perfecto para compartir!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="500" data-aos-duration="600">
+					<div class="logos-card three">
+						<img alt="logo" src="assets/img/logos-3.jpg">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Pizzas</a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star-half-stroke"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">porcion</a>
+								<a href="#">personal</a>
+								<a class="end" href="#">familiar</a>
+							</div>
+							<p>Deléitate con nuestras pizzas artesanales, hechas con masa fresca y cubiertas de los
+								mejores ingredientes. ¡Cada porción es una explosión de sabor irresistible!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="button-gap">
+				<a href="restaurants.html" class="button button-2 non">Explorar Todos<i
+						class="fa-solid fa-arrow-right"></i></a>
+			</div>
+		</div>
+	</section>
+	<!-- your-favorite-food -->
+	<section class="your-favorite-food gap" style="background-image: url(assets/img/background-1.png);">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="food-photo-section">
+						<img alt="img" src="assets/img/photo-3.png">
+						<a href="#" class="one"><i class="fa-solid fa-burger"></i>Hamburguesas </a>
+						<a href="#" class="two"><i class="fa-solid fa-cheese"></i>Carnes</a>
+						<a href="#" class="three"><i class="fa-solid fa-pizza-slice"></i>Pizza y más</a>
+					</div>
+				</div>
+				<div class="col-lg-6 offset-lg-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="food-content-section">
+						<h2>Comida de los mejores Restaurantes en tu ubicación a la Mesa</h2>
+
+						<!-- <a href="#" class="button button-2">Ordenar Ahora</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- counters-section -->
+	<!-- <section class="counters-section">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="200"
+					data-aos-duration="300">
+					<div>
+						<h2>El servicio demuestra buen gusto</h2>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="300"
+					data-aos-duration="400">
+					<div class="count-time">
+						<h2 class="timer count-title count-number" data-to="976" data-speed="2000">976</h2>
+						<p>Clientes<br>
+							Satisfechos</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="400"
+					data-aos-duration="500">
+					<div class="count-time">
+						<h2 class="timer count-title count-number" data-to="12" data-speed="2000">12</h2>
+						<p>Mejores<br>
+							Restaurantes</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12" data-aos="flip-up" data-aos-delay="500"
+					data-aos-duration="600">
+					<div class="count-time sp">
+						<h2 class="timer count-title count-number" data-to="1" data-speed="2000">1</h2>
+						<span>k+</span>
+						<p>Deliverys<br>
+							Entregados</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- reviews-sections -->
+	<!-- <section class="reviews-sections gap">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="reviews-content">
+						<h2>Lo que los clientes dicen sobre nosotros </h2>
+						<div class="custome owl-carousel owl-theme">
+							<div class="item">
+								<h4>"Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Mauris a diam
+									maecenas sed enim. Egestas diam in arcu cursus euismod quis. Quam quisque id diam
+									vel".</h4>
+								<div class="thomas">
+									<img alt="girl" src="assets/img/photo-5.jpg">
+
+									<div>
+										<h6>Thomas Adamson</h6>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<h4>"Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Mauris a diam
+									maecenas sed enim. Egestas diam in arcu cursus euismod quis. Quam quisque id diam
+									vel".</h4>
+								<div class="thomas">
+									<img alt="girl" src="assets/img/photo-5.jpg">
+
+									<div>
+										<h6>Thomas Adamson</h6>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<h4>"Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Mauris a diam
+									maecenas sed enim. Egestas diam in arcu cursus euismod quis. Quam quisque id diam
+									vel".</h4>
+								<div class="thomas">
+									<img alt="girl" src="assets/img/photo-5.jpg">
+
+									<div>
+										<h6>Thomas Adamson</h6>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+										<i class="fa-solid fa-star"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-12" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="reviews-img">
+						<img alt="photo" src="assets/img/photo-4.png">
+						<i class="fa-regular fa-thumbs-up"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- join-partnership -->
+	<!-- <section class="join-partnership gap" style="background-color: #363636;">
+		<div class="container">
+			<h2>Quieres unirte a Nosotros y Ser Delivery</h2>
+			<div class="row">
+				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
+					<div class="join-img">
+						<img alt="img" src="assets/img/photo-6.jpg">
+						<div class="Join-courier">
+							<h3>Unirme Como Delivery</h3>
+							<a href="11become-partner.html" class="button button-2">Conocer Más <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
+					<div class="join-img">
+						<img alt="img" src="assets/img/photo-7.jpg">
+						<div class="Join-courier">
+							<h3>Unirme como Incoorporador</h3>
+							<a href="11become-partner.html" class="button button-2">Conocer Más <i class="fa-solid fa-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- news-section -->
+	<!-- <section class="news-section gap">
+		<div class="container">
+			<h2>Ultimas Noticias Y eventos de Pedidos Ya Cumpa</h2>
+			<div class="row">
+				<div class="col-xl-6 col-lg-12" data-aos="flip-up"  data-aos-delay="200" data-aos-duration="300">
+					<div class="news-posts-one">
+						<img alt="man" src="assets/img/photo-8.jpg">
+						<div class="quickeat">
+							<a href="#">news</a>
+							<a href="#">quickeat</a>
+						</div>
+						<h3>We Have Received An Award For The Quality Of Our Work</h3>
+							<p>Donec adipiscing tristique risus nec feugiat in fermentum. Sapien eget mi proin sed libero. Et magnis dis parturient montes nascetur.
+							Praesent semper feugiat nibh sed pulvinar proin gravida.</p>
+							<a href="#">Read More<i class="fa-solid fa-arrow-right"></i></a>
+							<ul class="data">
+								<li><h6><i class="fa-solid fa-user"></i>by Quickeat</h6></li>
+								<li><h6><i class="fa-regular fa-calendar-days"></i>01.Jan. 2022</h6></li>
+								<li><h6><i class="fa-solid fa-eye"></i>132</h6></li>
+							</ul>
+
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-12" data-aos="flip-up"  data-aos-delay="300" data-aos-duration="400">
+					<div class="news-post-two">
+						<img alt="food-img" src="assets/img/food-1.jpg">
+							<div class="news-post-two-data">
+								<div class="quickeat">
+									<a href="#">restaurants</a>
+									<a href="#">cooking</a>
+								</div>
+								<h6><a href="single-blog.html">With Quickeat you can order food for
+											the whole day</a></h6>
+								<p>Lorem ipTotal:  dolor sit amet, consectetur
+										adipiscing elit, sed do eiusmod tempor...</p>
+								<ul class="data">
+										<li><h6><i class="fa-solid fa-user"></i>by Quickeat</h6></li>
+										<li><h6><i class="fa-regular fa-calendar-days"></i>01.Jan. 2022</h6></li>
+										<li><h6><i class="fa-solid fa-eye"></i>132</h6></li>
+								</ul>
+						</div>
+					</div>
+					<div class="news-post-two">
+						<img alt="food-img" src="assets/img/food-2.jpg">
+							<div class="news-post-two-data">
+								<div class="quickeat">
+									<a href="#">restaurants</a>
+									<a href="#">cooking</a>
+								</div>
+								<h6><a href="single-blog.html">127+ Couriers On Our Team!</a></h6>
+								<p>Urna condimentum mattis pellentesque id nibh tortor id aliquet. Tellus at urna condimentum mattis...</p>
+								<ul class="data">
+										<li><h6><i class="fa-solid fa-user"></i>by Quickeat</h6></li>
+										<li><h6><i class="fa-regular fa-calendar-days"></i>01.Jan. 2022</h6></li>
+										<li><h6><i class="fa-solid fa-eye"></i>132</h6></li>
+								</ul>
+						</div>
+					</div>
+					<div class="news-post-two end">
+						<img alt="food-img" src="assets/img/food-3.jpg">
+							<div class="news-post-two-data">
+								<div class="quickeat">
+									<a href="#">restaurants</a>
+									<a href="#">cooking</a>
+								</div>
+								<h6><a href="single-blog.html">Why You Should Optimize Your
+																Menu for Delivery</a></h6>
+								<p>Enim lobortis scelerisque fermentum dui. Sit amet cursus sit amet dictum sit amet. Rutrum tellus...</p>
+								<ul class="data">
+										<li><h6><i class="fa-solid fa-user"></i>by Quickeat</h6></li>
+										<li><h6><i class="fa-regular fa-calendar-days"></i>01.Jan. 2022</h6></li>
+										<li><h6><i class="fa-solid fa-eye"></i>132</h6></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+	<!-- subscribe-section -->
+	<!-- <section class="subscribe-section gap" style="background:#fcfcfc">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="img-subscribe">
+						<img alt="Illustration" src="assets/img/illustration-4.png">
+					</div>
+				</div>
+				<div class="col-lg-5 offset-lg-1" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="get-the-menu">
+						<h2>Obtén el menú de tus restaurantes favoritos todos los días</h2>
+						<form>
+							<i class="fa-regular fa-bell"></i>
+							<input type="text" name="email" placeholder="Enter email address">
+							<button class="button button-2">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<!-- footer -->
+	<footer class="gap no-bottom" style="background-color: #363636;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-sm-12">
+					<div class="footer-description">
+						<a href="index.html">
+							<a href="index.html">
+								<img src="/assets/img/logo-f.png" alt="Logo" width="150" height="50">
+							</a>
+						</a>
+						<h2>Servicio de Delivery Comarapa</h2>
+						<p>Proyecto de Tecnologia Colegio Gabriel Rene Moreno Fé y Alegría</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="menu">
+						<!-- empty -->
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="menu contacts">
+						<h4>Contactos</h4>
+						<div class="footer-location">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>3312 Comarapa - Av. Heroes del chaco,
+								SantaCruz Bolivia</p>
+						</div>
+						<a href="mailto:delivery@mail.net"><i class="fa-solid fa-envelope"></i>pedidoscumpa@mail.net</a>
+						<a href="callto:+14253261627"><i class="fa-solid fa-phone"></i>+591 70000000</a>
+					</div>
+					<ul class="social-media">
+						<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-two gap no-bottom">
+				<p>Copyright © 2024. Servicio de Delivery Comarapa</p>
+				<div class="privacy">
+					<a href="#">Politicas de Privacidad</a>
+					<a href="#">Términos y Servicios</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/jquery.nice-select.min.js"></script>
+	<!-- owl.carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- aos -->
+	<script src="assets/js/aos.js"></script>
+	<!-- custom -->
+	<script src="assets/js/custom.js"></script>
+
+	<!-- bslthemes.com buttons html begin -->
+	<div class="bsl-popup" data-theme="quickeat" data-category="html">
+		<div class="bsl-popup__buttons"></div>
+		<div class="bsl-popup__content bsl-popup__content-related">
+			<div class="bsl-popup__menu"></div>
+			<div class="bsl-popup__tabs">
+				<div class="bsl-popup__tab bsl-popup__tab-demo"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-all"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-related"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-version"></div>
+			</div>
+		</div>
+		<div class="bsl-popup__content bsl-popup__content-help"></div>
+	</div>
+	<!-- bslthemes.com buttons html end -->
+
+	<!-- bslthemes.com buttons assets begin -->
+	<link rel="stylesheet" href="https://bslthemes.com/bslthms-advanced-btns/assets/style.css">
+	<script src="https://bslthemes.com/bslthms-advanced-btns/assets/script.js"></script>
+	<!-- bslthemes.com buttons assets end -->
+</body>

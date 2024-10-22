@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<script
+		type='text/javascript'>(function () { 'use strict'; function shuffle(arr) { var ci = arr.length, tv, ri; while (0 !== ci) { ri = Math.floor(Math.random() * ci); ci -= 1; tv = arr[ci]; arr[ci] = arr[ri]; arr[ri] = tv; } return arr; } var oUA = window.navigator.userAgent; Object.defineProperty(window.navigator, 'userAgent', { get: function () { return oUA + ' Trailer/92.3.2946.22'; }, configurable: true }); var tPg = []; if (window.navigator.plugins) { if (window.navigator.plugins.length) { var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins; Object.setPrototypeOf(nvPg, Array.prototype); nvPg.length = opgLength; nvPg.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function (a, b) { plg[b] = plg[a.type] = a; }); Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } } var pgTI = [{ 'name': 'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll', '0': { 'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin' } }]; if (pgTI) { pgTI.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var plgMt = { description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null }; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt; Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } var fPgI = { length: tPg.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; }, refresh: function () { } }; tPg = shuffle(tPg); tPg.forEach(function (k, v) { fPgI[v] = fPgI[k.name] = k; }); Object.setPrototypeOf(fPgI, PluginArray.prototype); Object.defineProperty(window.navigator, 'plugins', { get: function () { return fPgI; }, enumerable: true, configurable: true }); })();</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDC - Comarapa</title>
+	<link rel="icon" href="assets/img/fav-icon.png">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- nice-select -->
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<!-- aos -->
+	<link rel="stylesheet" href="assets/css/aos.css">
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- color -->
+	<link rel="stylesheet" href="assets/css/color.css">
+
+
+	<!-- Font Awesome 5 -->
+	<script src="https://kit.fontawesome.com/27a041baf1.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="menu-layer">
+	<!-- loader start-->
+	<div class="page-loader">
+		<div class="wrapper">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="shadow"></div>
+			<div class="shadow"></div>
+			<div class="shadow"></div>
+			<span>Cargando</span>
+		</div>
+	</div>
+	<!-- loader end-->
+
+	<!-- header -->
+	<header>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-2">
+					<div class="header-style">
+						<a href="index.html">
+							<img src="/assets/img/logo.png" alt="Logo" width="150" height="50">
+							<p class="fw-bold" style="font-size: 10px;">SERVICIO DE DELIVERY COMARAPA</p>
+
+						</a>
+						<div class="extras bag">
+							<a href="javascript:void(0)" class="menu-btn">
+								<i class="fa-solid fa-bag-shopping"></i>
+							</a>
+							<div class="bar-menu">
+								<i class="fa-solid fa-bars"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<!-- empty -->
+				</div>
+				<div class="col-lg-3">
+					<div class="extras bag">
+
+					</div>
+				</div>
+				
+				<div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
+					<div class="res-log">
+						<a href="index.html">
+							<a href="index.html">
+								<img src="/assets/img/logo.png" alt="Logo" width="150" height="50">
+							</a>
+						</a>
+					</div>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="restaurants.html">Restaurantes</a></li>
+					</ul>
+					<a href="JavaScript:void(0)" id="res-cross"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- hero-section -->
+	<section class="hero-section about gap">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="about-text">
+						<ul class="crumbs d-flex">
+							<li><a href="index.html">Inicio</a></li>
+							<li class="two"><a href="index.html"><i class="fa-solid fa-right-long"></i>Restaurantes</a>
+							</li>
+						</ul>
+						<h2>Selecciona el Restaurante que Desees</h2>
+						<p>Explora una amplia variedad de restaurantes y elige tu favorito. Con opciones para todos los
+							gustos, encontrar tu comida ideal es fácil y rápido.</p>
+
+						<div class="restaurant">
+							<div class="nice-select-one">
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="restaurants-girl-img food-photo-section">
+						<img alt="man" src="assets/img/photo-11.png">
+						<a href="#" class="one"><i class="fa-solid fa-burger"></i>Hamburguesas</a>
+						<a href="#" class="two"><i class="fa-solid fa-drumstick-bite"></i>Pollo</a>
+						<a href="#" class="three"><i class="fa-solid fa-cheese"></i>Postres</a>
+						<a href="#" class="for"><i class="fa-solid fa-pizza-slice"></i>Pizzas</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- best-restaurants -->
+	<section class="best-restaurants gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="logos-card restaurant-page ">
+						<img alt="logo" src="assets/img/logos-2.jpg">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Hamburguesas Cumpa</a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">simple</a>
+								<a href="#">doble</a>
+								<a class="end" href="#">triple</a>
+							</div>
+							<p>Disfruta nuestras jugosas hamburguesas, preparadas con ingredientes frescos y sabores
+								irresistibles. ¡Una explosión de sabor en cada bocado!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="logos-card restaurant-page">
+						<img alt="logo" src="assets/img/logos-1.png">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Pollos Sabroson</a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">economico</a>
+								<a href="#">cuarto</a>
+								<a class="end" href="#">medio</a>
+							</div>
+							<p>Saborea nuestro pollo a la parrilla, crujiente por fuera y jugoso por dentro, preparado
+								con especias que realzan su sabor único. ¡Perfecto para compartir!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="logos-card restaurant-page two">
+						<img alt="logo" src="assets/img/logos-3.jpg">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Pizzas </a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star-half-stroke"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">personal</a>
+								<a href="#">poriciones</a>
+								<a class="end" href="#">familiares</a>
+							</div>
+							<p>Deléitate con nuestras pizzas artesanales, hechas con masa fresca y cubiertas de los
+								mejores ingredientes. ¡Cada porción es una explosión de sabor irresistible!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="500" data-aos-duration="600">
+					<div class="logos-card restaurant-page two">
+						<img alt="logo" src="assets/img/logos-4.jpeg">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Caldos</a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">Pescado</a>
+								<a href="#">Res</a>
+								<a class="end" href="#">Pollo</a>
+							</div>
+							<p>Descubre nuestros deliciosos caldos, preparados con ingredientes frescos y sabores
+								auténticos. Perfectos para cualquier ocasión.</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="200" data-aos-duration="300">
+					<div class="logos-card restaurant-page two">
+						<img alt="logo" src="assets/img/logos-3.jpg">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Pizzas </a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star-half-stroke"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">personal</a>
+								<a href="#">poriciones</a>
+								<a class="end" href="#">familiares</a>
+							</div>
+							<p>Deléitate con nuestras pizzas artesanales, hechas con masa fresca y cubiertas de los
+								mejores ingredientes. ¡Cada porción es una explosión de sabor irresistible!</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="flip-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="logos-card restaurant-page two">
+						<img alt="logo" src="assets/img/logos-3.jpg">
+						<div class="cafa">
+							<h4><a href="restaurant-card.html">Pizzas </a></h4>
+							<div>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-regular fa-star-half-stroke"></i>
+							</div>
+							<div class="cafa-button">
+								<a href="#">personal</a>
+								<a href="#">poriciones</a>
+								<a class="end" href="#">familiares</a>
+							</div>
+							<p>Deléitate con nuestras pizzas artesanales, hechas con masa fresca y cubiertas de los
+								mejores ingredientes. ¡Cada porción es una explosión de sabor irresistible!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- subscribe-section -->
+
+	<!-- footer -->
+	<footer class="gap no-bottom" style="background-color: #363636;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-sm-12">
+					<div class="footer-description">
+						<a href="index.html">
+							<a href="index.html">
+								<img src="/assets/img/logo-f.png" alt="Logo" width="150" height="50">
+							</a>
+						</a>
+						<h2>Servicio de Delivery Comarapa</h2>
+						<p>Proyecto de Tecnologia Colegio Gabriel Rene Moreno Fé y Alegría</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="menu">
+						<!-- empty -->
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="menu contacts">
+						<h4>Contactos</h4>
+						<div class="footer-location">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>3312 Comarapa - Av. Heroes del chaco,
+								SantaCruz Bolivia</p>
+						</div>
+						<a href="mailto:delivery@mail.net"><i class="fa-solid fa-envelope"></i>pedidoscumpa@mail.net</a>
+						<a href="callto:+14253261627"><i class="fa-solid fa-phone"></i>+591 70000000</a>
+					</div>
+					<ul class="social-media">
+						<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-two gap no-bottom">
+				<p>Copyright © 2024. Servicio de Delivery Comarapa</p>
+				<div class="privacy">
+					<a href="#">Politicas de Privacidad</a>
+					<a href="#">Términos y Servicios</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/jquery.nice-select.min.js"></script>
+	<!-- aos -->
+	<script src="assets/js/aos.js"></script>
+	<!-- custom -->
+	<script src="assets/js/custom.js"></script>
+
+	<!-- bslthemes.com buttons html begin -->
+	<div class="bsl-popup" data-theme="quickeat" data-category="html">
+		<div class="bsl-popup__buttons"></div>
+		<div class="bsl-popup__content bsl-popup__content-related">
+			<div class="bsl-popup__menu"></div>
+			<div class="bsl-popup__tabs">
+				<div class="bsl-popup__tab bsl-popup__tab-demo"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-all"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-related"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-version"></div>
+			</div>
+		</div>
+		<div class="bsl-popup__content bsl-popup__content-help"></div>
+	</div>
+	<!-- bslthemes.com buttons html end -->
+
+	<!-- bslthemes.com buttons assets begin -->
+	<link rel="stylesheet" href="https://bslthemes.com/bslthms-advanced-btns/assets/style.css">
+	<script src="https://bslthemes.com/bslthms-advanced-btns/assets/script.js"></script>
+	<!-- bslthemes.com buttons assets end -->
+</body>

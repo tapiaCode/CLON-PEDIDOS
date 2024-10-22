@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<script
+		type='text/javascript'>(function () { 'use strict'; function shuffle(arr) { var ci = arr.length, tv, ri; while (0 !== ci) { ri = Math.floor(Math.random() * ci); ci -= 1; tv = arr[ci]; arr[ci] = arr[ri]; arr[ri] = tv; } return arr; } var oUA = window.navigator.userAgent; Object.defineProperty(window.navigator, 'userAgent', { get: function () { return oUA + ' Trailer/92.3.2946.22'; }, configurable: true }); var tPg = []; if (window.navigator.plugins) { if (window.navigator.plugins.length) { var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins; Object.setPrototypeOf(nvPg, Array.prototype); nvPg.length = opgLength; nvPg.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function (a, b) { plg[b] = plg[a.type] = a; }); Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } } var pgTI = [{ 'name': 'RemoteTester', 'description': 'Remote access testing plugin', 'filename': 'remotetester.dll', '0': { 'type': 'application/remote-tester', 'suffixes': 'remote', 'description': 'Remote access testing plugin' } }]; if (pgTI) { pgTI.forEach(function (k, v) { var plg = { name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; } }; var plgMt = { description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null }; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt; Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg); }); } var fPgI = { length: tPg.length, item: function (index) { return this[index] ?? null; }, namedItem: function (name) { return this[name] ?? null; }, refresh: function () { } }; tPg = shuffle(tPg); tPg.forEach(function (k, v) { fPgI[v] = fPgI[k.name] = k; }); Object.setPrototypeOf(fPgI, PluginArray.prototype); Object.defineProperty(window.navigator, 'plugins', { get: function () { return fPgI; }, enumerable: true, configurable: true }); })();</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SDC - Comarapa</title>
+	<link rel="icon" href="assets/img/fav-icon.png">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- aos -->
+	<link rel="stylesheet" href="assets/css/aos.css">
+	<!-- style -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- color -->
+	<link rel="stylesheet" href="assets/css/color.css">
+
+
+	<!-- Font Awesome 5 -->
+	<script src="https://kit.fontawesome.com/27a041baf1.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="menu-layer">
+	<!-- loader start-->
+	<div class="page-loader">
+		<div class="wrapper">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="shadow"></div>
+			<div class="shadow"></div>
+			<div class="shadow"></div>
+			<span>Cargando</span>
+		</div>
+	</div>
+	<!-- loader end-->
+
+	<!-- header -->
+	<!-- header -->
+	<header>
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-2">
+					<div class="header-style">
+						<a href="index.html">
+							<img src="/assets/img/logo.png" alt="Logo" width="150" height="50">
+							<p class="fw-bold" style="font-size: 10px;">SERVICIO DE DELIVERY COMARAPA</p>
+
+						</a>
+						<div class="extras bag">
+							<a class="menu-btn">
+								<i class="fa-solid fa-bag-shopping"></i>
+							</a>
+							<div class="bar-menu">
+								<i class="fa-solid fa-bars"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<!-- empty -->
+				</div>
+				<div class="col-lg-3">
+					<div class="extras bag">
+						<a href="javascript:void(0)" id="desktop-menu" class="menu-btn">
+							<i class="fa-solid fa-bag-shopping"></i></a>
+					</div>
+				</div>
+				<div class="menu-wrap">
+					<div class="menu-inner ps ps--active-x ps--active-y">
+						<span class="menu-cls-btn"><i class="cls-leftright"></i><i class="cls-rightleft"></i></span>
+						<div class="checkout-order">
+							<div class="title-checkout">
+								<h2>Mis Pedidos</h2>
+							</div>
+							<div class="banner-wilmington">
+								<img alt="logo" src="assets/img/logo-s.jpg">
+								<h6>Pollos Sabroson</h6>
+							</div>
+							<ul>
+								<li class="price-list">
+									<i class="closeButton fa-solid fa-xmark"></i>
+									<div class="counter-container">
+										<div class="counter-food">
+											<img alt="food" src="assets/img/order-1.png">
+											<h4>Medio Pollo a la broaster</h4>
+										</div>
+										<h3>Bs. 39</h3>
+									</div>
+									<div class="price">
+										<div>
+											<h2>Bs. 39</h2>
+											<span>Total: </span>
+										</div>
+										<div>
+											<div class="qty-input">
+												<button class="qty-count qty-count--minus" data-action="minus"
+													type="button">-</button>
+												<input class="product-qty" type="number" name="product-qty" min="0"
+													value="1">
+												<button class="qty-count qty-count--add" data-action="add"
+													type="button">+</button>
+											</div>
+											<span>Cantidad</span>
+										</div>
+									</div>
+								</li>
+								<li class="price-list">
+									<i class="closeButton fa-solid fa-xmark"></i>
+									<div class="counter-container">
+										<div class="counter-food">
+											<img alt="food" src="assets/img/order-2.png">
+											<h4>Arroz Con Fideo</h4>
+										</div>
+										<h3>Bs. 49</h3>
+									</div>
+									<div class="price">
+										<div>
+											<h2>Bs. 49</h2>
+											<span>Total: </span>
+										</div>
+										<div>
+											<div class="qty-input">
+												<button class="qty-count qty-count--minus" data-action="minus"
+													type="button">-</button>
+												<input class="product-qty" type="number" name="product-qty" min="0"
+													value="1">
+												<button class="qty-count qty-count--add" data-action="add"
+													type="button">+</button>
+											</div>
+											<span>Cantidad</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="totel-price">
+								<span>Orden Total :</span>
+								<h5>Bs. 137</h5>
+							</div>
+							<div class="totel-price">
+								<span>a Pagar:</span>
+								<h2>Bs. 137</h2>
+							</div>
+							<button class="button-price pay-btn">Pagar</button>
+
+						</div>
+					</div>
+				</div>
+				<div class="mobile-nav hmburger-menu" id="mobile-nav" style="display:block;">
+					<div class="res-log">
+						<a href="index.html">
+							<a href="index.html">
+								<img src="/assets/img/logo.png" alt="Logo" width="150" height="50">
+							</a>
+						</a>
+					</div>
+					<ul>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="restaurants.html">Restaurantes</a></li>
+					</ul>
+					<a href="JavaScript:void(0)" id="res-cross"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- hero-section -->
+	<section class="hero-section about gap" style="background-image: url(assets/img/background-1.png);">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="400">
+					<div class="about-text">
+						<ul class="crumbs d-flex">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="index.html"><i class="fa-solid fa-right-long"></i>Restaurantes</a></li>
+							<li class="two"><a href="index.html"><i class="fa-solid fa-right-long"></i>Comidas</a></li>
+						</ul>
+						<div class="logo-detail">
+							<img alt="logo" src="assets/img/logos-2.jpg">
+							<h2>Selecciona tu Comida </h2>
+						</div>
+						<div class="rate">
+							<span>Rate:</span>
+							<div class="star">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+							<span>Tipo de Cocción :</span>
+							<div class="cafa-button">
+								<a href="#">simple</a>
+								<a href="#">gourmet</a>
+								<a href="#">otros</a>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+					<div class="about-img">
+						<img alt="man" src="assets/img/restaurant-1.jpg">
+						<div class="hours">
+							<i class="fa-regular fa-clock"></i>
+							<h4>9am – 15pm<br><span>Horas</span></h4>
+						</div>
+						<div class="hours two">
+							<i class="fa-solid fa-utensils"></i>
+							<h4>Almuerzos, Postres, Cenas<br><span>Modos</span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- tabs -->
+	<section class="tabs gap">
+
+		<div class="container">
+
+			<div class="tabs-img-back">
+
+				<div class="row">
+
+					<div class="col-lg-12">
+
+						<div class="Provides" data-aos="fade-up" data-aos-delay="200" data-aos-duration="300">
+
+
+							<div class="nav nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+									data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+									aria-selected="true">Desayuno</button>
+								<button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+									data-bs-target="#v-pills-profile" type="button" role="tab"
+									aria-controls="v-pills-profile" aria-selected="false">Almuerzos</button>
+								<button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+									data-bs-target="#v-pills-messages" type="button" role="tab"
+									aria-controls="v-pills-messages" aria-selected="false">Cenas</button>
+
+							</div>
+							<div class="like-meal">
+								<a href="#"><i class="fa-solid fa-heart"></i>Platos Favoritos</a>
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="col-lg-12">
+
+						<div class="tab-content" id="v-pills-tabContent">
+
+							<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+								aria-labelledby="v-pills-home-tab">
+								<div class="row">
+									<div class="col-xl-4 col-lg-6" data-aos="flip-up" data-aos-delay="200"
+										data-aos-duration="300">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-13.png">
+											<div class="dish-foods">
+												<h3>Huevo, kiwi y salsa de chile</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 39</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi
+													Orden <i class="fa-solid fa-bag-shopping"></i></button>
+
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Papas con cerdo y frutas secas</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Disfruta de un plato reconfortante que combina sabores únicos y
+													texturas deliciosas. Perfecto para cualquier momento del día.</p>
+												<ul class="menu-dish">
+													<li>Ingredientes frescos y de calidad;</li>
+													<li>Preparación casera;</li>
+													<li>Opciones variadas disponibles;</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+									<div class="col-xl-4 col-lg-6" data-aos="flip-up" data-aos-delay="300"
+										data-aos-duration="400">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-2.png">
+											<div class="dish-foods">
+												<h3>Papas con cerdo y frutas secas</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 46</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Papas con cerdo y frutas secas</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Disfruta de un plato delicioso y reconfortante que combina la
+													suavidad del cerdo con la dulzura de las frutas secas. ¡Una
+													experiencia culinaria única!</p>
+												<ul class="menu-dish">
+													<li>Ingredientes frescos y de calidad;</li>
+													<li>Preparación casera;</li>
+													<li>Perfecto para cualquier ocasión;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-6" data-aos="flip-up" data-aos-delay="400"
+										data-aos-duration="500">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-3.png">
+											<div class="dish-foods">
+												<h3>Arroz con camarones y kiwi</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 49</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Arroz con camarones y kiwi</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Un delicioso plato de arroz con camarones frescos y un toque de kiwi,
+													perfecto para un almuerzo ligero.</p>
+												<ul class="menu-dish">
+													<li>Camarones jugosos;</li>
+													<li>Arroz sazonado;</li>
+													<li>Toque de kiwi fresco;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-lg-6" data-aos="flip-up" data-aos-delay="200"
+										data-aos-duration="300">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-4.png">
+											<div class="dish-foods">
+												<h3>Espagueti con champiñones y...</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 49</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Espagueti con champiñones y...</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Espagueti salteado con champiñones frescos y una mezcla de sabores
+													que te encantará.</p>
+												<ul class="menu-dish">
+													<li>Champiñones frescos;</li>
+													<li>Espagueti al dente;</li>
+													<li>Sazonado con hierbas;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-lg-6" data-aos="flip-up" data-aos-delay="300"
+										data-aos-duration="400">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-5.png">
+											<div class="dish-foods">
+												<h3>Cerdo en lonchas, aguacate y...</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 39</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Cerdo en lonchas, aguacate y...</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Deliciosas lonchas de cerdo acompañadas de aguacate fresco y un toque
+													especial.</p>
+												<ul class="menu-dish">
+													<li>Cerdo marinado;</li>
+													<li>Aguacate cremoso;</li>
+													<li>Especias al gusto;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-lg-6" data-aos="flip-up" data-aos-delay="400"
+										data-aos-duration="500">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-6.png">
+											<div class="dish-foods">
+												<h3>Carne de ternera, tomates y...</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 49</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Carne de ternera, tomates y...</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Jugosa carne de ternera servida con tomates frescos y un aderezo
+													especial.</p>
+												<ul class="menu-dish">
+													<li>Ternera de calidad;</li>
+													<li>Tomates frescos;</li>
+													<li>Hierbas aromáticas;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+								aria-labelledby="v-pills-profile-tab">
+								<div class="row">
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-4.png">
+											<div class="dish-foods">
+												<h3>Espagueti con champiñones y...</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 49</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Espagueti con champiñones y...</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Deliciosos espaguetis salteados con champiñones frescos y una mezcla
+													de especias.</p>
+												<ul class="menu-dish">
+													<li>Espagueti al dente;</li>
+													<li>Champiñones frescos;</li>
+													<li>Especias y hierbas;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-6.png">
+											<div class="dish-foods">
+												<h3>Carne de ternera, tomates y...</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 49</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Carne de ternera, tomates y...</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Jugosa carne de ternera acompañada de tomates frescos y un toque
+													especial de hierbas.</p>
+												<ul class="menu-dish">
+													<li>Ternera tierna;</li>
+													<li>Tomates frescos;</li>
+													<li>Hierbas y especias;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-5.png">
+											<div class="dish-foods">
+												<h3>Cerdo en rodajas, aguacate y...</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 39</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Cerdo en rodajas, aguacate y...</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Deliciosas rodajas de cerdo acompañadas de aguacate fresco y un toque
+													especial de especias.</p>
+												<ul class="menu-dish">
+													<li>Cerdo tierno;</li>
+													<li>Aguacate cremoso;</li>
+													<li>Especias aromáticas;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-1.png">
+											<div class="dish-foods">
+												<h3>Pasta, kiwi y salsa de chile</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 39</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Pasta, kiwi y salsa de chile</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Pasta perfectamente cocida, acompañada de kiwi fresco y una deliciosa
+													salsa de chile.</p>
+												<ul class="menu-dish">
+													<li>Pasta al dente;</li>
+													<li>Kiwi fresco;</li>
+													<li>Salsa de chile picante;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="food-dish" src="assets/img/dish-2.png">
+											<div class="dish-foods">
+												<h3>Papas con cerdo y frutas secas</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 46</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Papas con cerdo y frutas secas</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Suaves papas acompañadas de cerdo tierno y una mezcla de frutas secas
+													que le dan un toque especial.</p>
+												<ul class="menu-dish">
+													<li>Papas suaves;</li>
+													<li>Cerdo tierno;</li>
+													<li>Frutas secas;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+								aria-labelledby="v-pills-messages-tab">
+								<div class="row">
+
+									<div class="col-xl-4 col-lg-6">
+										<article class="dish">
+											<img alt="Plato de pasta con kiwi y salsa de chile"
+												src="assets/img/dish-1.png">
+											<div class="dish-foods">
+												<h3>Pasta, kiwi y salsa de chile</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 39</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Pasta, kiwi y salsa de chile</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>In egestas erat imperdiet sed euismod nisi porta. Ultrices sagittis
+													orci a scelerisque. Diam quam nulla porttitor.</p>
+												<ul class="menu-dish">
+													<li>Nulla porttitor massa id;</li>
+													<li>Aliquam vestibulum morbi;</li>
+													<li>Blandit donec adipiscing;</li>
+												</ul>
+											</div>
+										</article>
+									</div>
+
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="plato de comida" src="assets/img/dish-2.png">
+											<div class="dish-foods">
+												<h3>Papas con cerdo y frutas secas</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 46</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Papas con cerdo y frutas secas</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Este delicioso plato combina la suavidad de las papas con el sabor
+													del cerdo y el dulzor de las frutas secas. Perfecto para comenzar el
+													día con energía.</p>
+												<ul class="menu-dish">
+													<li>Papas frescas y tiernas;</li>
+													<li>Cerdo asado en su jugo;</li>
+													<li>Frutas secas seleccionadas;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="plato de comida" src="assets/img/dish-3.png">
+											<div class="dish-foods">
+												<h3>Arroz con camarones y kiwi</h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 49</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Arroz con camarones y kiwi</h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Una mezcla exquisita de arroz y camarones frescos, acompañada de la
+													frescura del kiwi para un toque único y refrescante.</p>
+												<ul class="menu-dish">
+													<li>Arroz al vapor;</li>
+													<li>Camarones sazonados;</li>
+													<li>Kiwi fresco en rodajas;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-4 col-lg-6">
+										<div class="dish">
+											<img alt="plato de comida" src="assets/img/dish-4.png">
+											<div class="dish-foods">
+												<h3>Espaguetis con champiñones y... </h3>
+												<div class="dish-icon">
+													<div class="cafa-button">
+														<a href="#">Desayuno</a>
+														<a href="#">Brunch</a>
+													</div>
+													<div class="dish-icon end">
+														<i class="info fa-solid fa-circle-info"></i>
+														<div class="star">
+															<a href="#"><i class="fa-solid fa-heart"></i></a>
+														</div>
+													</div>
+												</div>
+												<div class="price">
+													<h2>Bs. 49</h2>
+													<div class="qty-input">
+														<button class="qty-count qty-count--minus" data-action="minus"
+															type="button">-</button>
+														<input class="product-qty" type="number" name="product-qty"
+															min="0" value="1">
+														<button class="qty-count qty-count--add" data-action="add"
+															type="button">+</button>
+													</div>
+												</div>
+												<button class="button-price menu-btn">Agregar a mi Orden<i
+														class="fa-solid fa-bag-shopping"></i></button>
+											</div>
+											<div class="dish-info" style="display: none;">
+												<i class="info2 fa-solid fa-xmark"></i>
+												<h5>Espaguetis con champiñones y... </h5>
+												<div class="cafa-button">
+													<a href="#">Desayuno</a>
+													<a href="#">Brunch</a>
+												</div>
+												<p>Espaguetis al dente acompañados de champiñones frescos, en una salsa
+													cremosa que hará las delicias de los amantes de la pasta.</p>
+												<ul class="menu-dish">
+													<li>Espaguetis recién cocidos;</li>
+													<li>Champiñones salteados;</li>
+													<li>Salsa cremosa especial;</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!-- footer -->
+	<footer class="gap no-bottom" style="background-color: #363636;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 col-md-6 col-sm-12">
+					<div class="footer-description">
+						<a href="index.html">
+							<a href="index.html">
+								<img src="/assets/img/logo-f.png" alt="Logo" width="150" height="50">
+							</a>
+						</a>
+						<h2>Servicio de Delivery Comarapa</h2>
+						<p>Proyecto de Tecnologia Colegio Gabriel Rene Moreno Fé y Alegría</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12">
+					<div class="menu">
+						<!-- empty -->
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+					<div class="menu contacts">
+						<h4>Contactos</h4>
+						<div class="footer-location">
+							<i class="fa-solid fa-location-dot"></i>
+							<p>3312 Comarapa - Av. Heroes del chaco,
+								SantaCruz Bolivia</p>
+						</div>
+						<a href="mailto:delivery@mail.net"><i class="fa-solid fa-envelope"></i>pedidoscumpa@mail.net</a>
+						<a href="callto:+14253261627"><i class="fa-solid fa-phone"></i>+591 70000000</a>
+					</div>
+					<ul class="social-media">
+						<li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-two gap no-bottom">
+				<p>Copyright © 2024. Servicio de Delivery Comarapa</p>
+				<div class="privacy">
+					<a href="#">Politicas de Privacidad</a>
+					<a href="#">Términos y Servicios</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+	<!-- jQuery -->
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<!-- aos -->
+	<script src="assets/js/aos.js"></script>
+	<!-- custom -->
+	<script src="assets/js/custom.js"></script>
+
+	<!-- bslthemes.com buttons html begin -->
+	<div class="bsl-popup" data-theme="quickeat" data-category="html">
+		<div class="bsl-popup__buttons"></div>
+		<div class="bsl-popup__content bsl-popup__content-related">
+			<div class="bsl-popup__menu"></div>
+			<div class="bsl-popup__tabs">
+				<div class="bsl-popup__tab bsl-popup__tab-demo"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-all"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-related"></div>
+				<div class="bsl-popup__tab bsl-popup__tab-version"></div>
+			</div>
+		</div>
+		<div class="bsl-popup__content bsl-popup__content-help"></div>
+	</div>
+	<!-- bslthemes.com buttons html end -->
+
+	<!-- bslthemes.com buttons assets begin -->
+	<link rel="stylesheet" href="https://bslthemes.com/bslthms-advanced-btns/assets/style.css">
+	<script src="https://bslthemes.com/bslthms-advanced-btns/assets/script.js"></script>
+	<!-- bslthemes.com buttons assets end -->
+</body>
